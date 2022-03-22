@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="activities.m2.FirstScreenController">
+    <children>
+        <HBox prefHeight="52.0" prefWidth="631.0">
+            <children>
+                <Label fx:id="health" alignment="CENTER" prefHeight="17.0" prefWidth="151.0" text="Health" />
+                <Label fx:id="health1" alignment="CENTER" prefHeight="17.0" prefWidth="92.0" text="S Towers: " />
+                <Label fx:id="numOfSmallTower" alignment="CENTER" prefHeight="17.0" prefWidth="32.0" text="0" />
+                <Label fx:id="health11" alignment="CENTER" prefHeight="17.0" prefWidth="111.0" text="M Towers: " />
+                <Label fx:id="numOfMediumTower" alignment="CENTER" prefHeight="17.0" prefWidth="32.0" text="0" />
+                <Label fx:id="health111" alignment="CENTER" prefHeight="17.0" prefWidth="111.0" text="L Towers: " />
+                <Label fx:id="numOfLargeTower" alignment="CENTER" prefHeight="17.0" prefWidth="32.0" text="0" />
+            </children>
+        </HBox>
+        <HBox prefHeight="27.0" prefWidth="1402.0">
+            <children>
+                <StackPane prefHeight="60.0" prefWidth="60.0">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0">
+                            <StackPane.margin>
+                                <Insets />
+                            </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="spot1" onMouseClicked="#onClickSpot1" text="Place Tower">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="50.0" />
+                    </HBox.margin>
+                </StackPane>
+                <StackPane prefHeight="60.0" prefWidth="60.0">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+                        <Label fx:id="spot2" onMouseClicked="#onClickSpot2" text="Place Tower">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="50.0" />
+                    </HBox.margin>
+                </StackPane>
+                <StackPane prefHeight="60.0" prefWidth="60.0">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+                        <Label fx:id="spot3" onMouseClicked="#onClickSpot3" text="Place Tower">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="50.0" />
+                    </HBox.margin>
+                </StackPane>
+                <StackPane prefHeight="60.0" prefWidth="60.0">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+                        <Label fx:id="spot4" onMouseClicked="#onClickSpot4" text="Place Tower">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="50.0" />
+                    </HBox.margin>
+                </StackPane>
+                <StackPane prefHeight="60.0" prefWidth="60.0">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+                        <Label fx:id="spot5" onMouseClicked="#onClickSpot5" text="Place Tower">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="50.0" />
+                    </HBox.margin>
+                </StackPane>
+            </children>
+        </HBox>
+        <Line endX="550.0" startX="-100.0" />
+        <HBox prefHeight="206.0" prefWidth="631.0">
+            <children>
+            <Pane prefHeight="122.0" prefWidth="631.0">
+               <children>
+                  <Circle fx:id="enemy" fill="#ff541f" layoutX="601.0" layoutY="61.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+                      <Circle fx:id="mm" fill="DODGERBLUE" layoutX="63.0" layoutY="61.0" radius="49.0" stroke="BLACK" strokeType="INSIDE" />
+               </children></Pane>
+            </children>
+        </HBox>
+        <Line endX="550.0" startX="-100.0" />
+        <HBox prefHeight="40.0" prefWidth="631.0">
+            <children>
+                <StackPane prefHeight="60.0" prefWidth="60.0">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0">
+                            <StackPane.margin>
+                                <Insets />
+                            </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="spot6" onMouseClicked="#onClickSpot6" text="Place Tower">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="50.0" />
+                    </HBox.margin>
+                </StackPane>
+                <StackPane prefHeight="60.0" prefWidth="60.0">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0">
+                            <StackPane.margin>
+                                <Insets />
+                            </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="spot7" onMouseClicked="#onClickSpot7" text="Place Tower">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="50.0" />
+                    </HBox.margin>
+                </StackPane>
+                <StackPane prefHeight="60.0" prefWidth="60.0">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0">
+                            <StackPane.margin>
+                                <Insets />
+                            </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="spot8" onMouseClicked="#onClickSpot8" text="Place Tower">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="50.0" />
+                    </HBox.margin>
+                </StackPane>
+                <StackPane prefHeight="60.0" prefWidth="60.0">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0">
+                            <StackPane.margin>
+                                <Insets />
+                            </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="spot9" onMouseClicked="#onClickSpot9" text="Place Tower">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="50.0" />
+                    </HBox.margin>
+                </StackPane>
+                <StackPane prefHeight="60.0" prefWidth="60.0">
+                    <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0">
+                            <StackPane.margin>
+                                <Insets />
+                            </StackPane.margin>
+                        </Rectangle>
+                        <Label fx:id="spot10" onMouseClicked="#onClickSpot10" text="Place Tower">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="50.0" />
+                    </HBox.margin>
+                </StackPane>
+            </children>
+        </HBox>
+        <HBox prefHeight="197.0" prefWidth="631.0" />
+        <HBox alignment="BOTTOM_RIGHT" prefHeight="108.0" prefWidth="631.0">
+            <children>
+                <ComboBox fx:id="towerCombos" prefWidth="150.0" promptText="choose tower">
+                    <HBox.margin>
+                        <Insets right="50.0" />
+                    </HBox.margin>
+                </ComboBox>
+                <Button fx:id="buytower" mnemonicParsing="false" onAction="#onBuyTower" prefHeight="67.0" prefWidth="117.0" text="Buy Tower" />
+                <Label fx:id="money" alignment="CENTER" prefHeight="173.0" prefWidth="135.0" text="Money" />
+                <Label fx:id="name" alignment="CENTER" prefHeight="102.0" prefWidth="92.0" text="Name" />
+                <Label fx:id="difficulty" alignment="CENTER" prefHeight="100.0" prefWidth="91.0" text="Difficulty" />
+            </children>
+        </HBox>
+    </children>
+</VBox>

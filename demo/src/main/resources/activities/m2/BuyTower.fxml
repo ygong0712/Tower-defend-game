@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="activities.m2.BuyTower">
+    <children>
+        <HBox prefHeight="107.0" prefWidth="600.0">
+            <children>
+                <Label fx:id="error" prefHeight="99.0" prefWidth="189.0" />
+                <Label alignment="CENTER" prefHeight="80.0" prefWidth="431.0" text="Buy Tower">
+                    <font>
+                        <Font size="38.0" />
+                    </font>
+                </Label>
+                <Button mnemonicParsing="false" onAction="#onBack" prefHeight="80.0" prefWidth="181.0" text="Back" />
+            </children>
+        </HBox>
+        <HBox prefHeight="103.0" prefWidth="600.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="86.0" prefWidth="205.0" text="Small Tower: " />
+                <Label alignment="CENTER" prefHeight="85.0" prefWidth="183.0" text="Medium Tower:" />
+                <Label alignment="CENTER" prefHeight="84.0" prefWidth="213.0" text="Large Tower:" />
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label fx:id="aMoney" alignment="CENTER" prefHeight="81.0" prefWidth="204.0" text="Small Tower" />
+                <Label fx:id="bMoney" alignment="CENTER" prefHeight="84.0" prefWidth="187.0" text="Medium Tower" />
+                <Label fx:id="cMoney" alignment="CENTER" prefHeight="83.0" prefWidth="208.0" text="Large Tower" />
+            </children>
+        </HBox>
+        <HBox prefHeight="67.0" prefWidth="600.0">
+            <children>
+                <Button fx:id="buyA" mnemonicParsing="false" onAction="#onBuyA" prefHeight="67.0" prefWidth="213.0" text="Buy small tower" />
+                <Button fx:id="buyB" mnemonicParsing="false" onAction="#onBuyB" prefHeight="67.0" prefWidth="190.0" text="Buy medium tower" />
+                <Button fx:id="buyC" mnemonicParsing="false" onAction="#onBuyC" prefHeight="67.0" prefWidth="216.0" text="Buy large tower" />
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label fx:id="aLeft" alignment="CENTER" prefHeight="90.0" prefWidth="204.0" text="0" />
+                <Label fx:id="bLeft" alignment="CENTER" prefHeight="84.0" prefWidth="187.0" text="0" />
+                <Label fx:id="cLeft" alignment="CENTER" prefHeight="91.0" prefWidth="214.0" text="0" />
+            </children>
+        </HBox>
+        <HBox alignment="BOTTOM_RIGHT" prefHeight="86.0" prefWidth="600.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="59.0" prefWidth="174.0" text="Difficulty:" />
+                <Label fx:id="difficulty" alignment="CENTER" prefHeight="59.0" prefWidth="142.0" text="easy" />
+                <Label alignment="CENTER" prefHeight="59.0" prefWidth="137.0" text="Money" />
+                <Label fx:id="money" alignment="CENTER" prefHeight="59.0" prefWidth="155.0" text="0" />
+            </children>
+        </HBox>
+    </children>
+</VBox>

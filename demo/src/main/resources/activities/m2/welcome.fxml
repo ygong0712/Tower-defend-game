@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="activities.m2.WelcomeController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="138.0" prefWidth="600.0">
+            <children>
+                <Label prefHeight="156.0" prefWidth="250.0" text="Welcome" alignment="CENTER">
+                    <font>
+                        <Font size="58.0" />
+                    </font></Label>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" prefHeight="127" prefWidth="600.0">
+            <children>
+                <Button fx:id="start" mnemonicParsing="false" onAction="#onstart" prefHeight="75.0" prefWidth="600.0" text="Start">
+                    <font>
+                        <Font size="51.0" />
+                    </font>
+                </Button>
+            </children></VBox>
+        <Button fx:id="exit" mnemonicParsing="false" onAction="#onexit" prefHeight="75.0" prefWidth="600.0" text="Exit" textAlignment="CENTER">
+            <font>
+                <Font size="51.0" />
+            </font>
+        </Button>
+    </children>
+</VBox>
